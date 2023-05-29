@@ -14,8 +14,6 @@ int main()
   s.push(100000001);
   index.push(0);
 
-  int ans[num];
-  memset(ans, 0, sizeof(ans));
   for(int i = 1; i <= num; i++)
   {
     int tower;
