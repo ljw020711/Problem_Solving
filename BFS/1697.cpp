@@ -6,6 +6,8 @@ using namespace std;
 
 int main() 
 {
+  ios::sync_with_stdio(0); cin.tie(0);
+  
   int map[mx];
   memset(map, 0, sizeof(map));
   int subin, sister;
