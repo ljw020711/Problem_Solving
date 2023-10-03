@@ -8,7 +8,7 @@ int numbers[8];
 int ans[8];
 
 
-void func(int n, int available[], int idx)
+void func(int n, int available[])
 {
   if(n == len)
   {
@@ -34,7 +34,7 @@ void func(int n, int available[], int idx)
       available[j] = 1;
       ans[n] = numbers[j];
       before = ans[n];
-      func(n + 1, available, j); 
+      func(n + 1, available); 
       
       available[j] = 0;
     }
@@ -58,5 +58,5 @@ int main()
   int available[num];
   memset(available, 0, sizeof(available));
   
-  func(0, available, 0);
+  func(0, available);
 }
